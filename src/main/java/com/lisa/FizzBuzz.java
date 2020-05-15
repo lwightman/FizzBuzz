@@ -3,19 +3,19 @@ package com.lisa;
 public class FizzBuzz {
     private static final String FIZZ = "fizz";
     private static final String BUZZ = "buzz";
-    private static final String FIZZBUZZ = FIZZ + BUZZ;
     private static final String SPACE = " ";
 
-    public static final String fizzBuzz(final int input) {
+    public static String fizzBuzz(final int input) {
         StringBuilder results = new StringBuilder();
         int number = 1;
 
         while(number <= input) {
-            if (number % 3 == 0) {
+            if (number % 3 == 0 && number % 5 ==0) {
+                results.append(FIZZ + BUZZ);
+            } else if (number % 3 == 0) {
                 results.append(FIZZ);
-                if(number % 5 == 0) {
-                    results.append(BUZZ);
-                }
+            } else if(number % 5 == 0) {
+                results.append(BUZZ);
             } else {
                 results.append(number);
             }

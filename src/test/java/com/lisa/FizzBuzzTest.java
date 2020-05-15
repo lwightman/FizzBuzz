@@ -12,11 +12,9 @@ class FizzBuzzTest {
         //given
 
         //when
-        final String results = main.java.com.lisa.FizzBuzz.fizzBuzz(20);
-        final String results2 = main.java.com.lisa.FizzBuzz.fizzBuzz(8);
+        final String results = FizzBuzz.fizzBuzz(20);
 
         //then
-        assertEquals("1 2 fizz 4 5 fizz 7 8 fizz 10 11 fizz 13 14 fizzbuzz 16 17 fizz 19 20", results);
-        assertEquals("1 2 fizz 4 5 fizz 7 8", results2);
+        assertEquals("1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz", results);
     }
 }
